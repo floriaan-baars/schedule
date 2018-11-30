@@ -225,6 +225,11 @@ class Job(object):
                 timestats=timestats
             )
 
+    def dynamic_dow(self, dow):
+        """Custom method for dynamically selecting a day of the week"""
+        self.unit = dow
+        return self
+
     @property
     def second(self):
         assert self.interval == 1, 'Use seconds instead of second'
