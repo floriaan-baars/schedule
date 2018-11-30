@@ -15,9 +15,9 @@ from setuptools import setup
 
 
 SCHEDULE_VERSION = '0.5.0'
-# SCHEDULE_DOWNLOAD_URL = (
-#     'https://github.com/dbader/schedule/tarball/' + SCHEDULE_VERSION
-# )
+SCHEDULE_DOWNLOAD_URL = (
+    'https://github.com/floriaan-baars/schedule/tarball/' + SCHEDULE_VERSION
+)
 
 def read_file(filename):
     """
@@ -36,7 +36,7 @@ setup(
     author='Daniel Bader',
     author_email='mail@dbader.org',
     url='https://github.com/floriaan-baars/schedule',
-    #download_url=SCHEDULE_DOWNLOAD_URL,
+    download_url=SCHEDULE_DOWNLOAD_URL,
     keywords=[
         'schedule', 'periodic', 'jobs', 'scheduling', 'clockwork',
         'cron', 'scheduler', 'job scheduling'
