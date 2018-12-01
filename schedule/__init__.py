@@ -227,8 +227,9 @@ class Job(object):
 
     def dynamic_dow(self, dow):
         """Custom method for dynamically selecting a day of the week"""
-        self.unit = dow
-        return self
+        assert self.interval == 1, 'Use weekdays instead of weekday'
+        self.start_day = dow
+        return self.weeks
 
     @property
     def second(self):
